@@ -15,6 +15,10 @@ class CreateHousesTable extends Migration
     {
         Schema::create('houses', function (Blueprint $table) {
             $table->id();
+            $table->string('type',20);
+            $table->string('mq',5,2);
+            $table->string('price',9,2);
+            $table->string('garden')->default('yes');
             $table->timestamps();
         });
     }
