@@ -1,0 +1,17 @@
+.table_detail {
+    padding-top:30px;
+
+    table, td, th {
+        border: 1px solid black;
+        width: 10%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+
+.menu_table_detail{
+    background-color: pink;
+}

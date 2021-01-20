@@ -1,0 +1,79 @@
+.navbar ul {
+  display: inline;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 1px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+}
+
+.container h1 {
+  padding-top: 36px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.header {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.table {
+  padding-top: 30px;
+}
+
+.table table,
+.table td,
+.table th {
+  border: 1px solid black;
+  width: 10%;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu_table {
+  background-color: pink;
+}
+
+.table_detail {
+  padding-top: 30px;
+}
+
+.table_detail table,
+.table_detail td,
+.table_detail th {
+  border: 1px solid black;
+  width: 10%;
+}
+
+.table_detail table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu_table_detail {
+  background-color: pink;
+}
+

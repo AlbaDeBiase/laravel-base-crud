@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\House;
 
 use Illuminate\Http\Request;
 
@@ -11,9 +12,13 @@ class HouseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index(){
+    $all_houses = House::all();
+
+        $data = [
+            'houses' => $all_houses
+        ];
+        return view('houses.index',$data);
     }
 
     /**
@@ -45,7 +50,14 @@ class HouseController extends Controller
      */
     public function show($id)
     {
-        //
+            $house = House::find($id);
+            if($house){
+                $data = [
+                    'house' => $house
+                ];
+                return view('houses.show',$data);
+            }
+            abort(404);   
     }
 
     /**
