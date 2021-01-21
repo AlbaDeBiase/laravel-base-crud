@@ -6,6 +6,9 @@
         <h1>New House</h1>
       <form method="POST "action="{{route('houses.store')}}">
           @csrf
+          <label>id</label>
+          <input type="text"  name="id" placeholder="">
+
         <label>Type</label>
         <input type="text"  name="type" placeholder="">
 
@@ -13,7 +16,7 @@
         <input type="text" name="mq" placeholder="">
 
         <label>Price</label>
-        <input type="text" name="mq" placeholder="">
+        <input type="text" name="price" placeholder="">
 
         <label>Garden</label>
         <input type="text" name="garden" placeholder="">

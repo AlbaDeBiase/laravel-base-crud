@@ -43,6 +43,7 @@ class HouseController extends Controller
         $new_house = new House();
         $new_house ->fill($data);
         $new_house -> save();
+
         return redirect()->route('houses.index');
     }
 

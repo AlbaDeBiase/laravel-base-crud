@@ -3,6 +3,7 @@
 @section('content')
     <div class="container">
         <h1>Houses For Sale</h1>
+        <a href="{{route('houses.create')}}">Inserisci</a>
         <div class="table">
             <div class="menu_table">
                 <table>
