@@ -4,10 +4,14 @@
 
     <div class="form">
         <h1>New House</h1>
-      <form method="POST "action="{{route('houses.store')}}">
+      <form method="POST" action="{{route('houses.store')}}">
           @csrf
+
+          @method('POST')
+          <!--
           <label>id</label>
           <input type="text"  name="id" placeholder="">
+      -->
 
         <label>Type</label>
         <input type="text"  name="type" placeholder="">
