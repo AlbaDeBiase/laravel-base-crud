@@ -39,10 +39,10 @@ class HouseController extends Controller
      */
     public function store(Request $request)
     {
-        $data=$request->all();
+        $data = $request->all();
         $new_house = new House();
         $new_house ->fill($data);
-        $new_house -> save();
+        $new_house ->save();
 
         return redirect()->route('houses.index');
     }

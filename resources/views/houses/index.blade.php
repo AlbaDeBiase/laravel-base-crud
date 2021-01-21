@@ -3,7 +3,10 @@
 @section('content')
     <div class="container">
         <h1>Houses For Sale</h1>
-        <a href="{{route('houses.create')}}">Inserisci</a>
+        <button type="button" name="button">
+               <a href="{{route('houses.create')}}">Inserisci</a>
+        </button>
+
         <div class="table">
             <div class="menu_table">
                 <table>
