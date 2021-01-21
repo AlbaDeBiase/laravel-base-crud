@@ -28,7 +28,7 @@ class HouseController extends Controller
      */
     public function create()
     {
-        //
+        return view('houses.create');
     }
 
     /**
@@ -39,7 +39,11 @@ class HouseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        $new_house = new House();
+        $new_house ->fill($data);
+        $new_house -> save();
+        return redirect()->route('houses.index');
     }
 
     /**
@@ -57,7 +61,7 @@ class HouseController extends Controller
                 ];
                 return view('houses.show',$data);
             }
-            abort(404);   
+            abort(404);
     }
 
     /**
